@@ -1,10 +1,10 @@
 Pomo
 ==========
-Pomo é um projeto que visa aumentar agilidade mental da pessoas.
+Pomo é um projeto que visa aumentar a agilidade mental da pessoas.
 
 O Pomo é um gerenciador de taferas online, onde suas atividades estão sempre disponíveis, a qualquer hora e em qualquer lugar.
 
-Técnica que utiliza um cronômetro para dividir o trabalho em períodos de 25 minutos chamados de 'pomodoros' com intervalos de 5 minutos (Haja vista que pausas frequentes podem aumentar a agilidade mental).
+A técnica Pomodoro utiliza um cronômetro para dividir o trabalho em períodos de 25 minutos, chamados de 'pomodoros'. A cada pomodoro recomenda-se um intervalo de 5 minutos (Haja vista que pausas frequentes podem aumentar a agilidade mental).
 
 Fase
 ----------
