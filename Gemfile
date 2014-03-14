@@ -33,4 +33,5 @@ gem "slim-rails", "~> 2.1.2"
 #internacionalização
 gem "start", "~> 0.1.1"
 
-
+#login
+gem "devise", "~> 3.2.3"

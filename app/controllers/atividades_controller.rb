@@ -1,5 +1,6 @@
 class AtividadesController < ApplicationController
   before_action :set_atividade, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /atividades
   def index

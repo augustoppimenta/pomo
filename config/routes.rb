@@ -1,4 +1,5 @@
 Pomo::Application.routes.draw do
+  devise_for :users
   resources :atividades
   root 'home#index'
   # The priority is based upon order of creation: first created -> highest priority.

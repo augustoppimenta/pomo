@@ -19,8 +19,12 @@ html
            ul.nav.navbar-nav
               li.active
                 a href="/atividades" Atividades
+           ul.nav.navbar-nav.pull-right
+              li = link_to 'Sair', destroy_user_session_path, method: :delete
 
     .container
+      .notice = notice
+      .alert = alert
       = yield
 
     = javascript_include_tag "application", "data-turbolinks-track" => true
