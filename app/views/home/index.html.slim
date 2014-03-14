@@ -1,4 +1,101 @@
-h1 Home#index
-p Find me in app/views/home/index.html.slim
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+      title Pomo
+      meta content="width=device-width, initial-scale=1.0" name="viewport"
+        meta content="" name="description"
+          meta content="" name="author"
+            /! Le styles
+            link href="../assets/css/bootstrap.css" rel="stylesheet"
+              css:
+                | body {
+                  | padding-top: 20px;
+                  | padding-bottom: 40px;
+                | }
 
-h2 = link_to 'Login', new_user_session_path, method: :get
+                /!* Custom container */
+                .container-narrow {
+                  | margin: 0 auto;
+                  | max-width: 700px;
+                | }
+                .container-narrow > hr {
+                  | margin: 30px 0;
+                | }
+
+                /!* Main marketing message and sign up button */
+                .jumbotron {
+                  | margin: 60px 0;
+                  | text-align: center;
+                | }
+                .jumbotron h1 {
+                  | font-size: 72px;
+                  | line-height: 1;
+                | }
+                .jumbotron .btn {
+                  | font-size: 21px;
+                  | padding: 14px 24px;
+                | }
+
+                /!* Supporting marketing content */
+                .marketing {
+                  | margin: 60px 0;
+                | }
+                .marketing p + h4 {
+                  | margin-top: 28px;
+                | }
+                  link href="../assets/css/bootstrap-responsive.css" rel="stylesheet"
+                /! HTML5 shim, for IE6-8 support of HTML5 elements
+                /![if lt IE 9]
+                  | <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script
+                /! Fav and touch icons
+                link href="../assets/ico/favicon.ico" rel=("shortcut icon")
+                  link href="../assets/ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144"
+                    link href="../assets/ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114"
+                      link href="../assets/ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72"
+                        link href="../assets/ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed"
+  body
+    .container-narrow
+      .masthead
+        ul.nav.nav-pills.pull-right
+          li.active = link_to 'Login', new_user_session_path, method: :get
+
+        h1.muted Pomo
+      hr
+        .jumbotron
+          h2 Aumente sua produtividade
+          p.lead O Pomo é um projeto que visa aumentar a agilidade mental da pessoas.
+          = link_to 'Cadastre-se', new_user_registration_path, method: :get, class: 'btn btn-success'
+        hr
+          .row-fluid.marketing
+            .span6
+              h4 O que é o Pomo?
+              p O Pomo é um gerenciador de taferas online, onde suas atividades estão sempre disponíveis, a qualquer hora e em qualquer lugar.
+              h4 Pomodoro
+              p A técnica Pomodoro utiliza um cronômetro para dividir o trabalho em períodos de 25 minutos, chamados de 'pomodoros'. A cada pomodoro recomenda-se um intervalo de 5 minutos (Haja vista que pausas frequentes podem aumentar a agilidade mental).
+              h4 Colabore com o projeto:
+              p Esta iniciativa é de um iniciante para a outros iniciantes. Sei que desenvolver projetos sozinhos e aprender é bem difícil, por isso estou tentanto e espero que vocês tentem aprender ao máximo com esse e outros projetos open source. Vamos crescer juntos!
+              a.btn.btn-large.btn-primary href="https://github.com/augustoppimenta/pomo"  Github
+            .span6
+
+          hr
+            .footer
+              p &copy; Pomo 2014
+    /! /container
+    /!
+      | Le javascript
+      | \==================================================
+    /! Placed at the end of the document so the pages load faster
+    script src="../assets/js/jquery.js"
+    script src="../assets/js/bootstrap-transition.js"
+    script src="../assets/js/bootstrap-alert.js"
+    script src="../assets/js/bootstrap-modal.js"
+    script src="../assets/js/bootstrap-dropdown.js"
+    script src="../assets/js/bootstrap-scrollspy.js"
+    script src="../assets/js/bootstrap-tab.js"
+    script src="../assets/js/bootstrap-tooltip.js"
+    script src="../assets/js/bootstrap-popover.js"
+    script src="../assets/js/bootstrap-button.js"
+    script src="../assets/js/bootstrap-collapse.js"
+    script src="../assets/js/bootstrap-carousel.js"
+    script src="../assets/js/bootstrap-typeahead.js"
