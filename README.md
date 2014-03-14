@@ -12,7 +12,7 @@ Estamos na fase bem inicial.
 
 Ajuda
 ----------
-Se você quiser ajudar a melhorar este guia, escrevendo, corrigindo ou aprimorando a experiência de utilização, por favor, faça um FORK do projeto e mãos à obra.
+Se você quiser ajudar a melhorar este projeto, escrevendo, corrigindo ou aprimorando a experiência, por favor, faça um FORK do projeto e mãos na massa.
 
 Iniciantes para inciantes
 ----------
