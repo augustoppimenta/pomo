@@ -1,0 +1,27 @@
+doctype
+html
+  head
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    title Pomo
+    = stylesheet_link_tag    "usuario", media: "all", "data-turbolinks-track" => true
+    = csrf_meta_tags
+
+    /if lt IE 9]
+      = javascript_include_tag "html5shiv", "data-turbolinks-track" => true
+      = javascript_include_tag "respond.min", "data-turbolinks-track" => true
+
+    body
+      - if user_signed_in?
+        .navbar.navbar-inverse.navbar-fixed-top
+         .container
+           .navbar-header
+            = link_to 'Pomo', '#', class: 'navbar-brand'
+           .navbar-collapse
+             ul.nav.navbar-nav
+                li class="#" = link_to 'Atividades', usuario_atividades_path
+             ul.nav.navbar-nav.pull-right
+                li = link_to 'Sair', destroy_user_session_path, method: :delete
+
+    .container
+      = yield
+    = javascript_include_tag "usuario", "data-turbolinks-track" => true

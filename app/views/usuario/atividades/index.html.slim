@@ -1,0 +1,27 @@
+h1 Lista de Atividades
+
+table.table.table-striped
+  thead
+    tr
+      th Título
+      th Pomodoros
+      th Tempo de execução
+      th Executar em
+      th
+
+  tbody
+    - @atividades.order(:data_de_exec).each do |atividade|
+      tr
+        td = atividade.titulo
+        td = atividade.pomodoro
+        td = calculating(atividade.pomodoro)
+        td = l atividade.data_de_exec
+        td
+          .btn-group.pull-right
+            = link_to 'Editar', edit_usuario_atividade_path(atividade), class: 'btn btn-default btn-sm'
+            = link_to 'Excluir', [:usuario, atividade], data: {:confirm => 'Tem certeza que quer excluir este item?'}, :method => :delete, class: 'btn btn-default btn-sm'
+            = link_to 'Start',  [:usuario, atividade], data: {:confirm => 'Tem certeza que deseja iniciar esta atividade?'},class: 'btn btn-success btn-sm'
+
+br
+
+= link_to 'Nova Atividade', new_usuario_atividade_path, class: 'btn btn-primary'

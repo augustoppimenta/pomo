@@ -1,6 +1,8 @@
-class AtividadesController < ApplicationController
+class Usuario::AtividadesController < ApplicationController
   before_action :set_atividade, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
+
+  layout 'usuario'
 
   # GET /atividades
   def index
@@ -25,7 +27,7 @@ class AtividadesController < ApplicationController
     @atividade = Atividade.new(atividade_params)
 
     if @atividade.save
-      redirect_to atividades_url, notice: 'Atividade criada.'
+      redirect_to usuario_atividades_url, notice: 'Atividade criada.'
     else
       render action: 'new'
     end
@@ -34,7 +36,7 @@ class AtividadesController < ApplicationController
   # PATCH/PUT /atividades/1
   def update
     if @atividade.update(atividade_params)
-      redirect_to @atividade, notice: 'Atividade salva.'
+      redirect_to [:usuario ,@atividade], notice: 'Atividade salva.'
     else
       render action: 'edit'
     end
@@ -43,7 +45,7 @@ class AtividadesController < ApplicationController
   # DELETE /atividades/1
   def destroy
     @atividade.destroy
-    redirect_to atividades_url, notice: 'Atividade excluída.'
+    redirect_to usuario_atividades_url, notice: 'Atividade excluída.'
   end
 
   private
