@@ -11,16 +11,17 @@ html
       = javascript_include_tag "respond.min", "data-turbolinks-track" => true
 
     body
-      .navbar.navbar-inverse.navbar-fixed-top
-       .container
-         .navbar-header
-          a class="navbar-brand" href="/atividades" Pomo
-         .navbar-collapse
-           ul.nav.navbar-nav
-              li.active
-                a href="/atividades" Atividades
-           ul.nav.navbar-nav.pull-right
-              li = link_to 'Sair', destroy_user_session_path, method: :delete
+      - if user_signed_in?
+        .navbar.navbar-inverse.navbar-fixed-top
+         .container
+           .navbar-header
+            a class="navbar-brand" href="/atividades" Pomo
+           .navbar-collapse
+             ul.nav.navbar-nav
+                li.active
+                  a href="/atividades" Atividades
+             ul.nav.navbar-nav.pull-right
+                li = link_to 'Sair', destroy_user_session_path, method: :delete
 
     .container
       .notice = notice
