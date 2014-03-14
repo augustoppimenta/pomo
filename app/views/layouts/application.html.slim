@@ -24,8 +24,7 @@ html
                 li = link_to 'Sair', destroy_user_session_path, method: :delete
 
     .container
-      .notice = notice
-      .alert = alert
+
       = yield
 
     = javascript_include_tag "application", "data-turbolinks-track" => true
