@@ -1,0 +1,10 @@
+= simple_form_for(@atividade) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :titulo
+    = f.input :pomodoro, label: 'Pomodoros: (Lembrete: Cada pomodoro vale 25 min)'
+    = f.input :data_de_exec
+
+  .form-actions
+    = f.button :submit, class: 'btn btn-primary'

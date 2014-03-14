@@ -1,0 +1,30 @@
+p#notice = notice
+
+
+h2
+  .pull-right
+    = link_to 'Edit', edit_atividade_path(@atividade), class: 'btn btn-default'
+p
+  strong Atividade:
+  = @atividade.titulo
+p
+  strong Tempo:
+  = calculating(@atividade.pomodoro)
+p
+  strong Pomodoro(s):
+  = @atividade.pomodoro
+p
+  strong Data a ser executada:
+  = l @atividade.data_de_exec
+
+h2
+  = calculating(@atividade.pomodoro)
+
+tbody
+.media-grid
+  td
+    .btn-group
+            = link_to 'Pausar', '#', class: 'btn btn-danger btn-sm'
+            = link_to 'Cancelar', '#', class: 'btn btn-warning btn-sm'
+
+
