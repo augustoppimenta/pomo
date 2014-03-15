@@ -20,7 +20,9 @@ html
              ul.nav.navbar-nav
                 li class="#" = link_to 'Atividades', usuario_atividades_path
              ul.nav.navbar-nav.pull-right
+                li = link_to current_user.email, '#'
                 li = link_to 'Sair', destroy_user_session_path, method: :delete
+
 
     .container
       = yield

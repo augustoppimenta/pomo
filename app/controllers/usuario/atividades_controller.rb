@@ -56,6 +56,6 @@ class Usuario::AtividadesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def atividade_params
-      params.require(:atividade).permit(:titulo, :pomodoro, :data_de_exec)
+      params.require(:atividade).permit(:titulo, :pomodoro, :data_de_exec, :usuario_id)
     end
 end
