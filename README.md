@@ -14,6 +14,6 @@ Ajuda
 ----------
 Se você quiser ajudar a melhorar este projeto, escrevendo, corrigindo ou aprimorando a experiência, por favor, faça um FORK do projeto e mãos na massa.
 
-Iniciantes para inciantes
+Iniciante para inciantes
 ----------
-Esta iniciativa é de um iniciante para a outros iniciantes. Sei que desenvolver projetos sozinhos e aprender é bem difil, por isso estou tentanto e espero que vocês tentem aprender ao máximo com esse e outros projetos open source. Vamos crescer juntos!
+Esta iniciativa é de um iniciante para a outros iniciantes. Sei que desenvolver projetos sozinho e aprender é bem difícil, por isso estou tentanto e espero que vocês tentem aprender ao máximo com esse e outros projetos open source. Vamos crescer juntos!
